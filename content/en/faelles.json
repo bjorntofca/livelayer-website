@@ -1,0 +1,195 @@
+{
+  "lang": "en",
+  "other": "da",
+  "otherLabel": "Dansk",
+  "common": {
+    "skip": "Skip to content",
+    "nav": {
+      "audit": "Insight",
+      "plan": "Plan",
+      "partner": "Become a partner",
+      "cta": "Book 30 minutes",
+      "home": "LiveLayer, home",
+      "menu": "Menu",
+      "close": "Close menu"
+    },
+    "footer": {
+      "tagline": "Every event smarter than the last.",
+      "soon": "Coming next: forecasts that update as tickets sell.",
+      "contact": "hello@livelayer.dk",
+      "pages": "Pages"
+    },
+    "mailSubject": "Partnering with LiveLayer",
+    "bar": "Bar",
+    "barNames": [
+      "Main stage",
+      "Entrance",
+      "Stage 2",
+      "The tent",
+      "Food street",
+      "VIP",
+      "Camping"
+    ],
+    "days": [
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "conf": {
+      "high": "High",
+      "medium": "Medium"
+    },
+    "confLong": {
+      "high": "Confidence high",
+      "medium": "Confidence medium"
+    },
+    "state": {
+      "k": "Queue",
+      "o": "Fits",
+      "t": "No guests"
+    }
+  },
+  "ui": {
+    "tabs": [
+      "Insight",
+      "Plan",
+      "Vendors",
+      "Volunteers"
+    ],
+    "season": "Season 2026",
+    "days": "Friday–Sunday · 7 bars",
+    "lost": "Sales that walked away",
+    "empty": "Hours of capacity with no guests",
+    "top": "Biggest queue",
+    "topV": "Bar 4",
+    "topS": "Fri and Sat 21–23",
+    "panel": "Friday · all bars",
+    "findings": [
+      {
+        "t": "Bar 4 · the tent",
+        "s": "Queues Friday and Saturday 21–23",
+        "v": "DKK 64,000"
+      },
+      {
+        "t": "The VIP bar",
+        "s": "Nearly empty on Sunday from 20:00",
+        "v": "7 hours"
+      },
+      {
+        "t": "The burger stand",
+        "s": "Portions driven home on Saturday",
+        "v": "500"
+      }
+    ],
+    "plan": "Plan 2027",
+    "recs": "11 recommendations",
+    "chosen": "chosen",
+    "total": "More on the bottom line",
+    "vendor": "Burger stand · Saturday",
+    "vendorV": "1,850–2,100",
+    "vendorU": "portions",
+    "vendorS": "With your 12.5 % margin: about 2,220"
+  },
+  "explorer": {
+    "tabs": "Choose vendor",
+    "day": "Saturday",
+    "est": "Estimate",
+    "brought": "Brought last year",
+    "base": "Sold last Saturday",
+    "why": "How we get to the number",
+    "open": "See the reasoning",
+    "result": "Midpoint",
+    "unc": "Uncertainty",
+    "src": {
+      "sales": "Your sales data",
+      "tickets": "Ticket sales",
+      "relay": "Learned from other festivals",
+      "weather": "Weather forecast",
+      "site": "Your site plan"
+    },
+    "vendors": [
+      {
+        "name": "Burger stand",
+        "unit": "portions",
+        "unc": "±125 – mostly the weather",
+        "base": "Brought 2,600 and drove 500 home.",
+        "reasons": [
+          {
+            "t": "The pizza truck won’t sell out this year",
+            "d": "Last year about 180 guests bought a burger because the pizza was gone at 21:00. With two extra ovens that won’t happen again.",
+            "src": "sales"
+          },
+          {
+            "t": "New falafel stand on the food street",
+            "d": "Similar stands at other festivals took 2–3 % of the food sales around them.",
+            "src": "relay"
+          },
+          {
+            "t": "More tickets for Saturday",
+            "d": "Saturday ticket sales are 5 % ahead of the same time last year.",
+            "src": "tickets"
+          }
+        ]
+      },
+      {
+        "name": "Pizza truck",
+        "unit": "slices",
+        "unc": "±100 – mostly oven capacity",
+        "base": "Sold out at 21:00. Sales stopped, demand did not.",
+        "reasons": [
+          {
+            "t": "Demand that went unmet",
+            "d": "The queue and the turned-away orders from 21:00 to 23:00 add up to about 270 slices.",
+            "src": "sales"
+          },
+          {
+            "t": "New falafel stand on the food street",
+            "d": "Similar stands at other festivals took 2–3 % of the food sales around them.",
+            "src": "relay"
+          },
+          {
+            "t": "More tickets for Saturday",
+            "d": "Saturday ticket sales are 5 % ahead of the same time last year.",
+            "src": "tickets"
+          }
+        ]
+      },
+      {
+        "name": "Coffee bar",
+        "unit": "cups",
+        "unc": "±75",
+        "base": "Brought 1,000 and was almost spot on.",
+        "reasons": [
+          {
+            "t": "More tickets for Saturday",
+            "d": "Saturday ticket sales are 5 % ahead of the same time last year.",
+            "src": "tickets"
+          },
+          {
+            "t": "New coffee cart by the entrance",
+            "d": "It sits on the guests’ way in and takes part of the morning sales.",
+            "src": "site"
+          }
+        ]
+      },
+      {
+        "name": "Ice cream",
+        "unit": "scoops",
+        "unc": "±60 – mostly the weather",
+        "base": "Brought 900 and drove 200 home.",
+        "reasons": [
+          {
+            "t": "More tickets for Saturday",
+            "d": "Saturday ticket sales are 5 % ahead of the same time last year.",
+            "src": "tickets"
+          },
+          {
+            "t": "Cooler weather than last year",
+            "d": "The forecast says 19 degrees against 25 last year. At other festivals ice cream sales drop about 10 % at that difference.",
+            "src": "weather"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "title": "Indsigt · LiveLayer",
+  "description": "Hver bar og hver time på jeres sidste event, sat i kroner: hvor køerne kostede salg, og hvor kapaciteten stod tom.",
+  "hero": {
+    "h1": "Indsigt.",
+    "sub": "Hvad skete der på jeres sidste event – og hvad kostede det? Hver bar, hver time, sat i kroner.",
+    "a1": {
+      "k": "Bar 4 · fredag kl. 21–23",
+      "v": "32.000 kr.",
+      "s": "i salg, der gik fra køen"
+    },
+    "a2": {
+      "k": "VIP · søndag fra kl. 20",
+      "v": "7 timer",
+      "s": "med kapacitet uden gæster"
+    }
+  },
+  "get": {
+    "h2": "Det får I.",
+    "items": [
+      {
+        "t": "Hver bar, hver time",
+        "d": "Et overblik over hele eventet: hvor der var kø, hvor kapaciteten passede, og hvor den stod tom."
+      },
+      {
+        "t": "Tallene bag",
+        "d": "Hvad køerne kostede i salg, og hvad tom kapacitet kostede i leje og frivillige timer."
+      },
+      {
+        "t": "En gennemgang med jer",
+        "d": "Vi går resultatet igennem med jeres barchefer og den F&B-ansvarlige."
+      }
+    ]
+  },
+  "heat": {
+    "h2": "Hele festivalen på én side.",
+    "p": "Vælg en dag. Hver række er en bar, hver kolonne en time.",
+    "total": "i salg, der gik fra køen",
+    "empty": "timer med kapacitet uden gæster",
+    "legend": [
+      "Kø – salget går fra",
+      "Kapaciteten passer",
+      "Kapacitet uden gæster"
+    ],
+    "dayGroup": "Vælg dag"
+  },
+  "demand": {
+    "h2": "Når efterspørgslen løber fra kapaciteten.",
+    "p": "Bar 4 i teltet, fredag. Efterspørgslen stiger, da headlineren går på. Kapaciteten gør ikke.",
+    "demand": "Efterspørgsel",
+    "capacity": "Kapacitet",
+    "unit": "serveringer pr. time",
+    "note": "Ca. 32.000 kr. på to timer"
+  },
+  "lenses": {
+    "h2": "Det kigger vi på.",
+    "items": [
+      {
+        "t": "Kø og salg, der gik fra den",
+        "d": "Hvor og hvornår efterspørgslen var større end det, baren kunne nå at servere."
+      },
+      {
+        "t": "Kapacitet uden gæster",
+        "d": "Barer, terminaler og frivillige timer, der stod klar uden publikum."
+      },
+      {
+        "t": "Frivillige pr. time",
+        "d": "Hvordan bemandingen fulgte publikum – og hvor den ikke gjorde."
+      },
+      {
+        "t": "Betalingsterminaler",
+        "d": "Hvor mange der stod hvor, og hvor de gjorde mest gavn."
+      },
+      {
+        "t": "Boder og mængder",
+        "d": "Hvad boderne medbragte, solgte og kørte hjem – og hvordan de påvirkede hinanden."
+      }
+    ]
+  },
+  "cta": {
+    "h2": "Vil I se jeres eget event sådan her?",
+    "cta": "Bliv partner"
+  }
+}

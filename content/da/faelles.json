@@ -1,0 +1,195 @@
+{
+  "lang": "da",
+  "other": "en",
+  "otherLabel": "English",
+  "common": {
+    "skip": "Spring til indhold",
+    "nav": {
+      "audit": "Indsigt",
+      "plan": "Plan",
+      "partner": "Bliv partner",
+      "cta": "Book 30 minutter",
+      "home": "LiveLayer, forside",
+      "menu": "Menu",
+      "close": "Luk menu"
+    },
+    "footer": {
+      "tagline": "Hvert event klogere end det sidste.",
+      "soon": "Kommer: prognoser, der opdateres, efterhånden som billetterne sælges.",
+      "contact": "hello@livelayer.dk",
+      "pages": "Sider"
+    },
+    "mailSubject": "Partner hos LiveLayer",
+    "bar": "Bar",
+    "barNames": [
+      "Hovedscenen",
+      "Indgangen",
+      "Scene 2",
+      "Teltet",
+      "Madgaden",
+      "VIP",
+      "Camping"
+    ],
+    "days": [
+      "Fredag",
+      "Lørdag",
+      "Søndag"
+    ],
+    "conf": {
+      "high": "Høj",
+      "medium": "Middel"
+    },
+    "confLong": {
+      "high": "Sikkerhed høj",
+      "medium": "Sikkerhed middel"
+    },
+    "state": {
+      "k": "Kø",
+      "o": "Passer",
+      "t": "Uden gæster"
+    }
+  },
+  "ui": {
+    "tabs": [
+      "Indsigt",
+      "Plan",
+      "Boder",
+      "Frivillige"
+    ],
+    "season": "Sæson 2026",
+    "days": "Fredag–søndag · 7 barer",
+    "lost": "Salg, der gik fra køen",
+    "empty": "Timer med kapacitet uden gæster",
+    "top": "Største kø",
+    "topV": "Bar 4",
+    "topS": "fre og lør kl. 21–23",
+    "panel": "Fredag · alle barer",
+    "findings": [
+      {
+        "t": "Bar 4 · teltet",
+        "s": "Kø fredag og lørdag kl. 21–23",
+        "v": "64.000 kr."
+      },
+      {
+        "t": "VIP-baren",
+        "s": "Næsten tom søndag fra kl. 20",
+        "v": "7 timer"
+      },
+      {
+        "t": "Burgerboden",
+        "s": "Kørte portioner hjem lørdag",
+        "v": "500"
+      }
+    ],
+    "plan": "Plan 2027",
+    "recs": "11 anbefalinger",
+    "chosen": "valgt",
+    "total": "Mere på bundlinjen",
+    "vendor": "Burgerbod · lørdag",
+    "vendorV": "1.850–2.100",
+    "vendorU": "portioner",
+    "vendorS": "Med jeres margin på 12,5 %: ca. 2.220"
+  },
+  "explorer": {
+    "tabs": "Vælg bod",
+    "day": "Lørdag",
+    "est": "Estimat",
+    "brought": "Medbragt sidste år",
+    "base": "Solgt sidste lørdag",
+    "why": "Sådan når vi frem til tallet",
+    "open": "Se begrundelsen",
+    "result": "Midtpunkt",
+    "unc": "Usikkerhed",
+    "src": {
+      "sales": "Jeres salgsdata",
+      "tickets": "Billetsalg",
+      "relay": "Lært fra andre festivaler",
+      "weather": "Vejrudsigt",
+      "site": "Jeres pladsplan"
+    },
+    "vendors": [
+      {
+        "name": "Burgerbod",
+        "unit": "portioner",
+        "unc": "±125 – mest fra vejret",
+        "base": "Medbragte 2.600 og kørte 500 hjem.",
+        "reasons": [
+          {
+            "t": "Pizzavognen bliver ikke udsolgt i år",
+            "d": "Sidste år købte ca. 180 gæster burger, fordi pizzaen var væk kl. 21. Med to ekstra ovne sker det ikke igen.",
+            "src": "sales"
+          },
+          {
+            "t": "Ny falafelbod i madgaden",
+            "d": "Lignende boder på andre festivaler tog 2–3 % af madsalget omkring sig.",
+            "src": "relay"
+          },
+          {
+            "t": "Flere billetter til lørdag",
+            "d": "Billetsalget til lørdag ligger 5 % over samme tid sidste år.",
+            "src": "tickets"
+          }
+        ]
+      },
+      {
+        "name": "Pizzavogn",
+        "unit": "stykker",
+        "unc": "±100 – mest fra ovnkapaciteten",
+        "base": "Udsolgt kl. 21. Salget stoppede, men efterspørgslen gjorde ikke.",
+        "reasons": [
+          {
+            "t": "Efterspørgsel, der ikke blev mødt",
+            "d": "Køen og de afviste ordrer fra kl. 21 til 23 svarer til ca. 270 stykker.",
+            "src": "sales"
+          },
+          {
+            "t": "Ny falafelbod i madgaden",
+            "d": "Lignende boder på andre festivaler tog 2–3 % af madsalget omkring sig.",
+            "src": "relay"
+          },
+          {
+            "t": "Flere billetter til lørdag",
+            "d": "Billetsalget til lørdag ligger 5 % over samme tid sidste år.",
+            "src": "tickets"
+          }
+        ]
+      },
+      {
+        "name": "Kaffebar",
+        "unit": "kopper",
+        "unc": "±75",
+        "base": "Medbragte 1.000 og ramte næsten plet.",
+        "reasons": [
+          {
+            "t": "Flere billetter til lørdag",
+            "d": "Billetsalget til lørdag ligger 5 % over samme tid sidste år.",
+            "src": "tickets"
+          },
+          {
+            "t": "Ny kaffevogn ved indgangen",
+            "d": "Den ligger på gæsternes vej ind og tager en del af morgensalget.",
+            "src": "site"
+          }
+        ]
+      },
+      {
+        "name": "Isbod",
+        "unit": "is",
+        "unc": "±60 – mest fra vejret",
+        "base": "Medbragte 900 og kørte 200 hjem.",
+        "reasons": [
+          {
+            "t": "Flere billetter til lørdag",
+            "d": "Billetsalget til lørdag ligger 5 % over samme tid sidste år.",
+            "src": "tickets"
+          },
+          {
+            "t": "Køligere vejr end sidste år",
+            "d": "Prognosen siger 19 grader mod 25 sidste år. På andre festivaler falder issalget ca. 10 % ved den forskel.",
+            "src": "weather"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "title": "Become a partner · LiveLayer",
+  "description": "Right now LiveLayer takes on 4–5 partners – festivals, venues and event agencies. The first ones get Insight and Plan for free.",
+  "hero": {
+    "h1": "Become a partner.",
+    "sub": "Right now we take on 4⁠–⁠5 partners – festivals, venues and event agencies. The first ones get Insight and Plan for free. We get your honest feedback.",
+    "alt": "A crowd with their arms in the air under a festival tent"
+  },
+  "steps": {
+    "h2": "How it works.",
+    "items": [
+      {
+        "t": "A 30-minute conversation",
+        "d": "We hear about your events, and you hear what we can do."
+      },
+      {
+        "t": "You share sales from your last event",
+        "d": "We help you find them. No new systems and no integration."
+      },
+      {
+        "t": "We build your Insight",
+        "d": "Every bar, every hour – and what it meant."
+      },
+      {
+        "t": "Walk-through and Plan",
+        "d": "We go through the results with you and put the plan for next time on the table before the budget is set."
+      }
+    ]
+  },
+  "faq": {
+    "h2": "What we get asked.",
+    "items": [
+      {
+        "q": "What does it cost?",
+        "a": "It is only free for the first 4–5 partners we take on now. In return we ask for honest feedback along the way. For later partners it will be a paid service."
+      },
+      {
+        "q": "We run many events a year – not one festival. Is it for us?",
+        "a": "Yes. The more events, the faster Relay learns. Every event becomes a test the next one can build on."
+      },
+      {
+        "q": "Are our numbers shared with other festivals?",
+        "a": "No. Relay shares lessons, not numbers. Other festivals never see your sales – only that a pattern exists, adapted to their own festival."
+      },
+      {
+        "q": "Do we have to change systems?",
+        "a": "No. You keep the systems you have."
+      },
+      {
+        "q": "Where is our data stored?",
+        "a": "In the EU. We work with sales and counts – not with information about individual guests."
+      },
+      {
+        "q": "How much of our time does it take?",
+        "a": "One conversation at the start, a little help finding the numbers, and a walk-through at the end."
+      }
+    ]
+  },
+  "contact": {
+    "h2": "Let's talk.",
+    "p": "Write to us and we will find half an hour that suits you.",
+    "cta": "Book 30 minutes",
+    "or": "Or write directly to"
+  }
+}

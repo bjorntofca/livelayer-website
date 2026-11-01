@@ -1,0 +1,101 @@
+{
+  "title": "Plan · LiveLayer",
+  "description": "Det, I gør anderledes næste gang: anbefalinger om barer, betalingsterminaler, bemanding og mængder til boderne – hver med en værdi i kroner.",
+  "hero": {
+    "h1": "Plan.",
+    "sub": "Det, I gør anderledes næste gang. Konkrete anbefalinger – hver med en værdi i kroner, en begrundelse og hvor sikre vi er.",
+    "total": "Plan 2027",
+    "ann": [
+      "3 terminaler i bar 4",
+      "Pop-up-bar ved hovedscenen",
+      "Fire færre terminaler ved indgangen"
+    ],
+    "axis": "Mere på bundlinjen"
+  },
+  "ledger": {
+    "h2": "11 anbefalinger. 420.000 kr. mere på bundlinjen.",
+    "p": "Planen for 2027. I vælger selv, hvilke anbefalinger I følger – og Relay husker, hvordan de gik, til næste gang.",
+    "cols": [
+      "Anbefaling",
+      "Sikkerhed",
+      "Værdi"
+    ],
+    "total": "I alt",
+    "items": [
+      "3 ekstra betalingsterminaler i bar 4",
+      "Luk VIP-baren kl. 20 søndag, og flyt de frivillige",
+      "Flyt to frivillige fra bar 2 til bar 5 fredag kl. 18–20",
+      "Åbn camping-baren med to terminaler indtil kl. 21",
+      "Pop-up-bar ved hovedscenen efter kl. 23 lørdag",
+      "Flyt cider-lageret til bar 1 og 3 før lørdag aften",
+      "Kortere menu i madgaden, hurtigere servering",
+      "Fadøl-kø i bar 3 kl. 22–24",
+      "Lej fire færre terminaler til indgangsbaren",
+      "Mere køl i teltet lørdag",
+      "Kaffebaren i camping åbner kl. 7 i stedet for 9"
+    ]
+  },
+  "anatomy": {
+    "h2": "Hver anbefaling viser sit regnestykke.",
+    "p": "Vi gentager ikke bare sidste års klokkeslæt. Vi finder situationerne bag køen – og forudsiger, hvornår de opstår igen.",
+    "rows": [
+      {
+        "k": "Hvad",
+        "v": "3 ekstra betalingsterminaler i bar 4, når situationen opstår"
+      },
+      {
+        "k": "Situationen",
+        "v": "En headliner i teltet for et publikum på 25–35 år med høj købekraft, der især køber fadøl og drinks. Efterspørgslen topper 30–90 minutter efter koncertstart."
+      },
+      {
+        "k": "Hvornår den opstår igen",
+        "v": "To aftener i 2027: fredag fra kl. 21 og lørdag fra kl. 22 – dér, hvor line-uppet trækker samme publikum i teltet."
+      },
+      {
+        "k": "Signaler",
+        "v": "Line-up og genre · publikums alder og købekraft · hvad det publikum køber · billetsalg pr. dag"
+      },
+      {
+        "k": "Hvorfor",
+        "v": "Sidste år var efterspørgslen 700 serveringer i timen i den situation. Kapaciteten var 520."
+      },
+      {
+        "k": "Lært fra",
+        "v": "Samme mønster på to andre festivaler – tilpasset jeres telt og publikum"
+      },
+      {
+        "k": "Sikkerhed",
+        "v": "Høj – mønsteret gentog sig begge aftener sidste år"
+      }
+    ],
+    "value": "+64.000 kr.",
+    "valueLabel": "Værdi"
+  },
+  "staffing": {
+    "h2": "Frivillige, hvor publikum er.",
+    "p": "Bar 4 lørdag. Bemandingen følger de situationer, publikum skaber – forudsagt ud fra line-up, publikumsprofil og hvad de køber. Seks frivillige, når headlineren fylder teltet, og to, når det er roligt. Samme antal vagter.",
+    "moments": [
+      "Pladsen fyldes",
+      "Opvarmning",
+      "Headliner i teltet",
+      "Efter koncerten",
+      "De sidste timer"
+    ],
+    "last": "Sidste år",
+    "next": "Næste år"
+  },
+  "vendors": {
+    "h2": "Boderne får tallene på forhånd.",
+    "p": "Et interval pr. bod og dag – og hele begrundelsen bag. Vælg en bod, og se, hvordan vi når frem til tallet."
+  },
+  "terminals": {
+    "h2": "Betalingsterminaler, hvor køerne er.",
+    "p": "Flere, hvor køerne stod. Færre, hvor kapaciteten stod tom.",
+    "last": "Sidste år",
+    "next": "Næste år"
+  },
+  "cta": {
+    "h2": "Få jeres egen plan for næste gang.",
+    "cta": "Bliv partner"
+  }
+}

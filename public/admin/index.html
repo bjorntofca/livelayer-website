@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>LiveLayer · Redigér siden</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <style>
+    html, body { background: #f6f2ec; }
+    /* Login screen: LiveLayer only */
+    [class*="AuthenticationPage"] { background: #f6f2ec; }
+    [class*="AuthenticationPage"] img, [class*="LogoImg"] { max-width: 280px; height: auto; }
+    [class*="LoginButton"] { background: #1d1a17 !important; color: #fff !important; border-radius: 999px !important; }
+  </style>
+</head>
+<body>
+  <script>window.CMS_MANUAL_INIT = true;</script>
+  <script src="decap/decap-cms.js"></script>
+  <script>
+    fetch('config.json', { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(function (config) { window.CMS.init({ config: config }); });
+  </script>
+</body>
+</html>

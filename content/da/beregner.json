@@ -1,0 +1,42 @@
+{
+  "h": "Hvad kan I få ud af det?",
+  "guests": "Gæster pr. dag",
+  "days": "Festivaldage",
+  "day1": "dag",
+  "dayN": "dage",
+  "queue": "Lange køer i spidstimerne",
+  "q": [
+    "Sjældent",
+    "Nogle aftener",
+    "De fleste aftener"
+  ],
+  "out": "Vejledende potentiale pr. år",
+  "email": "Din e-mail",
+  "ph": "navn@festival.dk",
+  "send": "Send mig beregningen",
+  "sending": "Sender …",
+  "fine": "Vi sender en kort forklaring af tallet. Ingen nyhedsbrev.",
+  "invalid": "Skriv en gyldig e-mailadresse.",
+  "ok": "Tak! Beregningen er på vej til",
+  "preview": "Se mailen her",
+  "error": "Mailen kunne ikke sendes lige nu. Skriv til hello@livelayer.dk, så sender vi den.",
+  "mail": {
+    "subject": "Jeres beregning fra LiveLayer: {interval} om året",
+    "hello": "Hej,",
+    "intro": "Tak, fordi du prøvede vores beregner. Her er tallet og den korte forklaring bag.",
+    "inputs": "{gæster} gæster pr. dag · {dage} · lange køer {køer}",
+    "rangeLabel": "Vejledende potentiale pr. år",
+    "peakTitle": "Salg, der går fra køen",
+    "peakText": "I spidstimerne vil gæsterne købe mere, end barerne kan nå at servere. Kasserne viser kun det, der blev solgt – ikke det, gæsterne ville have købt – så tabet er usynligt i jeres egne tal. En stor del kan hentes med frivillige, betalingsterminaler og barer de rigtige steder, når situationerne opstår.",
+    "vendTitle": "Mindre spild, færre udsolgte boder",
+    "vendText": "Mad, der køres hjem, og salg, der går tabt, når en bod er udsolgt. Med et interval på forhånd rammer boderne bedre – og det kommer både dem og jer til gode.",
+    "whyTitle": "Hvorfor et interval?",
+    "whyText": "Beregningen bygger på sammenlignelige festivaler. Med jeres egne salgstal bliver intervallet smallere og konkret.",
+    "nextLead": "Næste skridt:",
+    "nextText": "Vi laver gerne den rigtige analyse på jeres egne tal – med de konkrete situationer, bar for bar, og hvad hver anbefaling er værd. Lige nu er det gratis for de første 4–5 partnere.",
+    "cta": "Book 30 minutter",
+    "ctaLink": "mailto:hello@livelayer.dk?subject=Analyse%20p%C3%A5%20vores%20egne%20tal",
+    "signoff": "Venlig hilsen\nBjørn\nLiveLayer · hello@livelayer.dk",
+    "notifySubject": "Ny beregning: {email}"
+  }
+}

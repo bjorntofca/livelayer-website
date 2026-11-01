@@ -1,0 +1,84 @@
+{
+  "title": "Insight · LiveLayer",
+  "description": "Every bar and every hour of your last event, in kroner: where queues cost sales and where capacity stood empty.",
+  "hero": {
+    "h1": "Insight.",
+    "sub": "What happened at your last event – and what did it cost? Every bar, every hour, in kroner.",
+    "a1": {
+      "k": "Bar 4 · Friday 21–23",
+      "v": "DKK 32,000",
+      "s": "in sales that walked away"
+    },
+    "a2": {
+      "k": "VIP · Sunday from 20:00",
+      "v": "7 hours",
+      "s": "of capacity with no guests"
+    }
+  },
+  "get": {
+    "h2": "What you get.",
+    "items": [
+      {
+        "t": "Every bar, every hour",
+        "d": "An overview of the whole event: where there were queues, where capacity fitted, and where it stood empty."
+      },
+      {
+        "t": "The numbers behind it",
+        "d": "What the queues cost in sales, and what empty capacity cost in rental and volunteer hours."
+      },
+      {
+        "t": "A walk-through with you",
+        "d": "We go through the results with your bar managers and your F&B lead."
+      }
+    ]
+  },
+  "heat": {
+    "h2": "The whole festival on one page.",
+    "p": "Choose a day. Each row is a bar, each column an hour.",
+    "total": "in sales that walked away",
+    "empty": "hours of capacity with no guests",
+    "legend": [
+      "Queue – sales walk away",
+      "Capacity fits",
+      "Capacity with no guests"
+    ],
+    "dayGroup": "Choose day"
+  },
+  "demand": {
+    "h2": "When demand outruns capacity.",
+    "p": "Bar 4 in the tent, Friday. Demand climbs when the headliner comes on. Capacity does not.",
+    "demand": "Demand",
+    "capacity": "Capacity",
+    "unit": "servings per hour",
+    "note": "About DKK 32,000 in two hours"
+  },
+  "lenses": {
+    "h2": "What we look at.",
+    "items": [
+      {
+        "t": "Queues and the sales that walked away",
+        "d": "Where and when demand was bigger than what the bar could serve."
+      },
+      {
+        "t": "Capacity with no guests",
+        "d": "Bars, terminals and volunteer hours that stood ready with no crowd."
+      },
+      {
+        "t": "Volunteers per hour",
+        "d": "How staffing followed the crowd – and where it didn’t."
+      },
+      {
+        "t": "Payment terminals",
+        "d": "How many stood where, and where they did the most good."
+      },
+      {
+        "t": "Vendors and volumes",
+        "d": "What vendors brought, sold and drove home – and how they affected each other."
+      }
+    ]
+  },
+  "cta": {
+    "h2": "Want to see your own event like this?",
+    "cta": "Become a partner"
+  }
+}

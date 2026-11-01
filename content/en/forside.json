@@ -1,0 +1,185 @@
+{
+  "title": "LiveLayer · Every event smarter than the last",
+  "description": "LiveLayer shows festivals and event organisers where queues cost sales and where capacity stood empty – and gives them a plan in kroner for next time.",
+  "hero": {
+    "h1": [
+      "Every event smarter",
+      "than the last."
+    ],
+    "sub": "LiveLayer shows where queues cost sales and where capacity stood empty – and gives you a plan in kroner for next time. For festivals, venues and event agencies.",
+    "cta": "Become a partner",
+    "more": "See how"
+  },
+  "statement": "A festival makes its money on a handful of nights. That is where the bars have to fit the crowd.",
+  "relay": {
+    "h2": "One chance a year.",
+    "steps": [
+      {
+        "t": "That is the problem.",
+        "d": "A festival runs for a few days a year. That leaves a few hours to try something new – and a whole year before the answer comes. So most decisions are made on gut feeling."
+      },
+      {
+        "t": "Relay learns from you, year after year.",
+        "d": "Every season becomes part of your festival’s memory: what you tried, what it gave, and what you changed the year after. The lessons build on each other instead of disappearing when the rota is packed away."
+      },
+      {
+        "t": "And from other festivals – adapted to you.",
+        "d": "Every festival is described in the same festival model: bars, zones, programme, crowd and hours. So Relay can model another festival’s lesson into your context – your size, site and programme. Personal data is deleted. The lessons stay."
+      },
+      {
+        "t": "Into ranges you can act on.",
+        "d": "Many factors are in play: ticket sales, programme, weather, site and the other vendors. We give a range based on data – and put your own decision margin on top, say 12.5 %, so the recommendation fits the risk you want to take."
+      }
+    ],
+    "read": [
+      {
+        "v": "3 days",
+        "s": "to learn from each year"
+      },
+      {
+        "v": "9 days",
+        "s": "from your own last three seasons"
+      },
+      {
+        "v": "+48 days",
+        "s": "from other festivals and events, modelled to you"
+      }
+    ],
+    "margin": {
+      "k": "Burger stand · Saturday",
+      "est": "Estimate from data",
+      "estV": "1,850–2,100",
+      "m": "Your decision margin",
+      "mV": "+12.5 %",
+      "rec": "Recommendation",
+      "recV": "Bring about 2,220 portions",
+      "f": "Ticket sales · programme · weather · site · the other vendors"
+    },
+    "vis": {
+      "years": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "next": "Your festival 2027",
+      "you": "Your festival",
+      "others": "Other festivals and events",
+      "ctx": "Your context"
+    },
+    "months": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "who": [
+      {
+        "t": "Festivals",
+        "d": "A few days and big sums. Learn from every hour – and from the other festivals."
+      },
+      {
+        "t": "Venues",
+        "d": "Many nights a year. Every night becomes a test the next one can build on."
+      },
+      {
+        "t": "Event agencies",
+        "d": "Many events and formats. The lessons travel from one to the next."
+      }
+    ]
+  },
+  "layer": {
+    "h2": "A layer of numbers over the festival.",
+    "p": "We lay your sales on top of the site, hour by hour and bar by bar. So you can see what you only sense today: where people gave up on the queue, and where volunteers stood waiting.",
+    "alt": "Guests queueing at a food truck",
+    "spark": "Queue in minutes, 17–23",
+    "tags": [
+      {
+        "k": "Food street",
+        "v": "Friday 19:00"
+      },
+      {
+        "k": "Queue",
+        "v": "8 min"
+      },
+      {
+        "k": "Gave up",
+        "v": "about 110 guests"
+      },
+      {
+        "k": "Sales that walked away",
+        "v": "≈ DKK 10,000"
+      }
+    ]
+  },
+  "night": {
+    "h2": "Friday night, hour by hour.",
+    "p": "Scroll through a Friday at a festival with seven bars.",
+    "alt": "The festival site from the air in the evening",
+    "lost": "Sales that walked away",
+    "empty": "Hours of capacity with no guests",
+    "slider": "Choose time",
+    "captions": [
+      "The gates open. Four bars are ready – but the guests have not arrived yet.",
+      "People pour in. Capacity fits almost everywhere.",
+      "First queue: the food street. Meanwhile the entrance bar stands idle.",
+      "The VIP bar empties. Volunteers and terminals wait.",
+      "The headliner comes on. The queue in the tent grows to 14 minutes.",
+      "Queues in the tent and at stage 2 at once. Every hour costs bar 4 about DKK 16,000.",
+      "The concert ends. The crowd moves to the main stage.",
+      "The after-party in the camping area. That is where the queue is now.",
+      "The last hours. Several bars stand with capacity and no guests.",
+      "Friday in total: DKK 106,000 in sales that walked away, and 27 hours of capacity with no guests."
+    ]
+  },
+  "products": {
+    "h2": "Two things in your hands.",
+    "items": [
+      {
+        "key": "audit",
+        "name": "Insight",
+        "q": "What happened – and what did it cost?",
+        "text": "Every bar and every hour of your last event: where queues cost sales, and where capacity stood empty. In kroner.",
+        "link": "See Insight"
+      },
+      {
+        "key": "plan",
+        "name": "Plan",
+        "q": "What do we do differently next time?",
+        "text": "Concrete recommendations on bars, payment terminals, staffing and vendor volumes. Each with its value in kroner.",
+        "link": "See Plan"
+      }
+    ]
+  },
+  "changes": {
+    "h2": "Less guessing.",
+    "lead": "You and your vendors no longer have to guess how much food and drink to bring. Every vendor gets a range for every day – with the reasoning behind it, so everyone can see exactly why we recommend it.",
+    "note": "The estimates hang together: when the pizza truck gets more ovens, the burger stand sells fewer burgers. So we calculate the whole festival at once – not one vendor at a time.",
+    "others": [
+      {
+        "t": "Volunteers that follow the crowd",
+        "d": "More where the queues will be. Fewer where they won’t – with the same number of shifts."
+      },
+      {
+        "t": "Terminals where they pay",
+        "d": "More payment terminals where the queues were. Fewer where capacity stood empty."
+      },
+      {
+        "t": "A budget built on numbers",
+        "d": "Every change has its value in kroner before the budget is set."
+      }
+    ]
+  },
+  "partner": {
+    "h2": "Right now we take on 4⁠–⁠5 partners. Free.",
+    "p": "Festivals, venues and event agencies. You get Insight and Plan. We get your honest feedback.",
+    "cta": "Become a partner"
+  }
+}

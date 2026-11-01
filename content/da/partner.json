@@ -1,0 +1,65 @@
+{
+  "title": "Bliv partner · LiveLayer",
+  "description": "Lige nu tager LiveLayer 4–5 partnere ind – festivaler, spillesteder og eventbureauer. De første får Indsigt og Plan gratis.",
+  "hero": {
+    "h1": "Bliv partner.",
+    "sub": "Lige nu tager vi 4⁠–⁠5 partnere ind – festivaler, spillesteder og eventbureauer. De første får Indsigt og Plan gratis. Vi får jeres ærlige feedback.",
+    "alt": "Publikum med armene i vejret under et festivaltelt"
+  },
+  "steps": {
+    "h2": "Sådan foregår det.",
+    "items": [
+      {
+        "t": "En samtale på 30 minutter",
+        "d": "Vi hører om jeres events, og I hører, hvad vi kan."
+      },
+      {
+        "t": "I deler salgstallene fra sidste event",
+        "d": "Vi hjælper med at finde dem frem. Ingen nye systemer og ingen integration."
+      },
+      {
+        "t": "Vi bygger jeres Indsigt",
+        "d": "Hver bar, hver time – og hvad det betød."
+      },
+      {
+        "t": "Gennemgang og Plan",
+        "d": "Vi går resultatet igennem med jer og lægger planen for næste gang på bordet, før budgettet lægges."
+      }
+    ]
+  },
+  "faq": {
+    "h2": "Det bliver vi spurgt om.",
+    "items": [
+      {
+        "q": "Hvad koster det?",
+        "a": "Det er kun gratis for de første 4–5 partnere, vi tager ind nu. Til gengæld beder vi om ærlig feedback undervejs. For senere partnere bliver det en betalt løsning."
+      },
+      {
+        "q": "Vi holder mange events om året – ikke én festival. Passer det til os?",
+        "a": "Ja. Jo flere events, jo hurtigere lærer Relay. Hvert event bliver et forsøg, som det næste kan bygge på."
+      },
+      {
+        "q": "Bliver vores tal delt med andre festivaler?",
+        "a": "Nej. Relay deler læringer, ikke tal. Andre festivaler ser aldrig jeres salg – kun at et mønster findes, tilpasset deres egen festival."
+      },
+      {
+        "q": "Skal vi skifte systemer?",
+        "a": "Nej. I beholder de systemer, I har."
+      },
+      {
+        "q": "Hvor ligger vores data?",
+        "a": "I EU. Vi arbejder med salg og optællinger – ikke med oplysninger om enkelte gæster."
+      },
+      {
+        "q": "Hvor meget tid kræver det af os?",
+        "a": "En samtale i starten, lidt hjælp til at finde tallene og en gennemgang til sidst."
+      }
+    ]
+  },
+  "contact": {
+    "h2": "Lad os tage en snak.",
+    "p": "Skriv til os, så finder vi en halv time, der passer jer.",
+    "cta": "Book 30 minutter",
+    "or": "Eller skriv direkte til"
+  }
+}

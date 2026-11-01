@@ -1,0 +1,185 @@
+{
+  "title": "LiveLayer · Hvert event klogere end det sidste",
+  "description": "LiveLayer viser festivaler og eventarrangører, hvor køerne kostede salg, og hvor kapaciteten stod tom – og giver en plan i kroner for næste gang.",
+  "hero": {
+    "h1": [
+      "Hvert event klogere",
+      "end det sidste."
+    ],
+    "sub": "LiveLayer viser, hvor køerne kostede salg, og hvor kapaciteten stod tom – og giver jer en plan i kroner for næste gang. Til festivaler, spillesteder og eventbureauer.",
+    "cta": "Bliv partner",
+    "more": "Se hvordan"
+  },
+  "statement": "En festival tjener sine penge på nogle få aftener. Det er dér, barerne skal passe til publikum.",
+  "relay": {
+    "h2": "Én chance om året.",
+    "steps": [
+      {
+        "t": "Det er problemet.",
+        "d": "En festival kører få dage om året. Så er der få timer til at prøve noget nyt – og et helt år, før svaret kommer. Derfor bliver de fleste beslutninger truffet på mavefornemmelse."
+      },
+      {
+        "t": "Relay lærer af jer, år for år.",
+        "d": "Hver sæson bliver en del af jeres festivals hukommelse: hvad I prøvede, hvad det gav, og hvad I ændrede året efter. Læringen bygger ovenpå hinanden i stedet for at forsvinde, når vagtplanen er pakket væk."
+      },
+      {
+        "t": "Og af andre festivaler – tilpasset jer.",
+        "d": "Alle festivaler beskrives i den samme festivalmodel: barer, zoner, program, publikum og timer. Derfor kan Relay modellere en anden festivals læring ind i jeres kontekst – jeres størrelse, plads og program. Persondata slettes. Læringen bliver."
+      },
+      {
+        "t": "Til intervaller, I kan handle på.",
+        "d": "Mange faktorer spiller ind: billetsalg, program, vejr, plads og de andre boder. Vi giver et interval baseret på data – og lægger jeres egen beslutningsmargin ovenpå, fx 12,5 %, så anbefalingen passer til den risiko, I vil tage."
+      }
+    ],
+    "read": [
+      {
+        "v": "3 dage",
+        "s": "at lære af om året"
+      },
+      {
+        "v": "9 dage",
+        "s": "fra jeres egne tre seneste sæsoner"
+      },
+      {
+        "v": "+48 dage",
+        "s": "fra andre festivaler og events, modelleret til jer"
+      }
+    ],
+    "margin": {
+      "k": "Burgerbod · lørdag",
+      "est": "Estimat fra data",
+      "estV": "1.850–2.100",
+      "m": "Jeres beslutningsmargin",
+      "mV": "+12,5 %",
+      "rec": "Anbefaling",
+      "recV": "Medbring ca. 2.220 portioner",
+      "f": "Billetsalg · program · vejr · plads · de andre boder"
+    },
+    "vis": {
+      "years": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "next": "Jeres festival 2027",
+      "you": "Jeres festival",
+      "others": "Andre festivaler og events",
+      "ctx": "Jeres kontekst"
+    },
+    "months": [
+      "jan",
+      "feb",
+      "mar",
+      "apr",
+      "maj",
+      "jun",
+      "jul",
+      "aug",
+      "sep",
+      "okt",
+      "nov",
+      "dec"
+    ],
+    "who": [
+      {
+        "t": "Festivaler",
+        "d": "Få dage og store beløb. Lær af hver time – og af de andre festivaler."
+      },
+      {
+        "t": "Spillesteder",
+        "d": "Mange aftener om året. Hver aften bliver et forsøg, som den næste kan bygge på."
+      },
+      {
+        "t": "Eventbureauer",
+        "d": "Mange events og formater. Læringen følger med fra det ene til det næste."
+      }
+    ]
+  },
+  "layer": {
+    "h2": "Et lag af tal over festivalen.",
+    "p": "Vi lægger jeres salgstal oven på pladsen, time for time og bar for bar. Så kan I se det, I i dag kun fornemmer: hvor folk opgav køen, og hvor de frivillige stod og ventede.",
+    "alt": "Gæster i kø ved en madvogn",
+    "spark": "Kø i minutter, kl. 17–23",
+    "tags": [
+      {
+        "k": "Madgaden",
+        "v": "fredag kl. 19"
+      },
+      {
+        "k": "Kø",
+        "v": "8 min"
+      },
+      {
+        "k": "Opgav køen",
+        "v": "ca. 110 gæster"
+      },
+      {
+        "k": "Salg, der gik fra køen",
+        "v": "≈ 10.000 kr."
+      }
+    ]
+  },
+  "night": {
+    "h2": "Fredag aften, time for time.",
+    "p": "Rul gennem en fredag på en festival med syv barer.",
+    "alt": "Festivalpladsen set fra luften om aftenen",
+    "lost": "Salg, der gik fra køen",
+    "empty": "Timer med kapacitet uden gæster",
+    "slider": "Vælg tidspunkt",
+    "captions": [
+      "Pladsen åbner. Fire barer står klar – men gæsterne er ikke kommet endnu.",
+      "Folk strømmer ind. Kapaciteten passer næsten overalt.",
+      "Første kø: madgaden. Imens står indgangsbaren stille.",
+      "VIP-baren tømmes. Frivillige og terminaler venter.",
+      "Headlineren går på. Køen i teltet vokser til 14 minutter.",
+      "Kø i teltet og ved scene 2 på samme tid. Hver time koster bar 4 omkring 16.000 kr.",
+      "Koncerten slutter. Publikum flytter mod hovedscenen.",
+      "Efterfesten i camping. Nu er det dér, køen står.",
+      "De sidste timer. Flere barer står med kapacitet uden gæster.",
+      "Fredag i alt: 106.000 kr. i salg, der gik fra køen, og 27 timer med kapacitet uden gæster."
+    ]
+  },
+  "products": {
+    "h2": "To ting, I får i hænderne.",
+    "items": [
+      {
+        "key": "audit",
+        "name": "Indsigt",
+        "q": "Hvad skete der – og hvad kostede det?",
+        "text": "Hver bar og hver time på jeres sidste event: hvor køerne kostede salg, og hvor kapaciteten stod tom. Sat i kroner.",
+        "link": "Se Indsigt"
+      },
+      {
+        "key": "plan",
+        "name": "Plan",
+        "q": "Hvad gør vi anderledes næste gang?",
+        "text": "Konkrete anbefalinger om barer, betalingsterminaler, bemanding og mængder til boderne. Hver med sin værdi i kroner.",
+        "link": "Se Plan"
+      }
+    ]
+  },
+  "changes": {
+    "h2": "Mindre gætværk.",
+    "lead": "I og jeres boder skal ikke længere gætte på, hvor meget mad og drikke der skal med. Hver bod får et interval for hver dag – med begrundelsen bag, så alle kan se, hvorfor vi anbefaler præcis det.",
+    "note": "Estimaterne hænger sammen: når pizzavognen får flere ovne, sælger burgerboden færre burgere. Derfor regner vi på hele festivalen på én gang – ikke på én bod ad gangen.",
+    "others": [
+      {
+        "t": "Frivillige efter publikum",
+        "d": "Flere, hvor køerne kommer. Færre, hvor de ikke gør – med samme antal vagter."
+      },
+      {
+        "t": "Terminaler, hvor de gør gavn",
+        "d": "Flere betalingsterminaler, hvor køerne stod. Færre, hvor kapaciteten stod tom."
+      },
+      {
+        "t": "Et budget bygget på tal",
+        "d": "Hver ændring har sin værdi i kroner, før budgettet lægges."
+      }
+    ]
+  },
+  "partner": {
+    "h2": "Lige nu tager vi 4⁠–⁠5 partnere ind. Gratis.",
+    "p": "Festivaler, spillesteder og eventbureauer. I får Indsigt og Plan. Vi får jeres ærlige feedback.",
+    "cta": "Bliv partner"
+  }
+}

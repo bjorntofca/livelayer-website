@@ -1,0 +1,5 @@
+# livelayer.si (and www) forwards to livelayer.dk
+https://livelayer.si/*      https://livelayer.dk/:splat  301!
+http://livelayer.si/*       https://livelayer.dk/:splat  301!
+https://www.livelayer.si/*  https://livelayer.dk/:splat  301!
+http://www.livelayer.si/*   https://livelayer.dk/:splat  301!

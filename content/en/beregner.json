@@ -1,0 +1,42 @@
+{
+  "h": "What could it be worth to you?",
+  "guests": "Guests per day",
+  "days": "Festival days",
+  "day1": "day",
+  "dayN": "days",
+  "queue": "Long queues at peak times",
+  "q": [
+    "Rarely",
+    "Some nights",
+    "Most nights"
+  ],
+  "out": "Indicative potential per year",
+  "email": "Your email",
+  "ph": "name@festival.com",
+  "send": "Send me the estimate",
+  "sending": "Sending …",
+  "fine": "We send a short explanation of the number. No newsletter.",
+  "invalid": "Please enter a valid email address.",
+  "ok": "Thanks! The estimate is on its way to",
+  "preview": "See the email here",
+  "error": "We couldn't send the email right now. Write to hello@livelayer.dk and we'll send it.",
+  "mail": {
+    "subject": "Your estimate from LiveLayer: {interval} a year",
+    "hello": "Hi,",
+    "intro": "Thanks for trying our calculator. Here is the number and the short explanation behind it.",
+    "inputs": "{gæster} guests per day · {dage} · long queues {køer}",
+    "rangeLabel": "Indicative potential per year",
+    "peakTitle": "Sales that walk away from the queue",
+    "peakText": "At peak times, guests want to buy more than the bars can serve. The tills only show what was sold – not what guests wanted – so the loss is invisible in your own numbers. Much of it can be won back with volunteers, payment terminals and bars in the right places when the situations occur.",
+    "vendTitle": "Less waste, fewer sold-out stalls",
+    "vendText": "Food driven home, and sales lost when a stall sells out. With a range up front, vendors get it right more often – which helps them and you.",
+    "whyTitle": "Why a range?",
+    "whyText": "The estimate builds on comparable festivals. With your own sales figures, the range gets narrower and concrete.",
+    "nextLead": "Next step:",
+    "nextText": "We're happy to do the real analysis on your own numbers – with the concrete situations, bar by bar, and what each recommendation is worth. Right now it's free for the first 4–5 partners.",
+    "cta": "Book 30 minutes",
+    "ctaLink": "mailto:hello@livelayer.dk?subject=Analysis%20on%20our%20own%20numbers",
+    "signoff": "Best regards\nBjørn\nLiveLayer · hello@livelayer.dk",
+    "notifySubject": "New estimate: {email}"
+  }
+}

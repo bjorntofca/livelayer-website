@@ -1,0 +1,101 @@
+{
+  "title": "Plan · LiveLayer",
+  "description": "What you do differently next time: recommendations on bars, payment terminals, staffing and vendor volumes – each with a value in kroner.",
+  "hero": {
+    "h1": "Plan.",
+    "sub": "What you do differently next time. Concrete recommendations – each with a value in kroner, a reason and how confident we are.",
+    "total": "Plan 2027",
+    "ann": [
+      "3 terminals at bar 4",
+      "Pop-up bar by the main stage",
+      "Four fewer terminals at the entrance"
+    ],
+    "axis": "More on the bottom line"
+  },
+  "ledger": {
+    "h2": "11 recommendations. DKK 420,000 more on the bottom line.",
+    "p": "The plan for 2027. You choose which recommendations to follow – and Relay remembers how they went, for next time.",
+    "cols": [
+      "Recommendation",
+      "Confidence",
+      "Value"
+    ],
+    "total": "Total",
+    "items": [
+      "3 more payment terminals at bar 4",
+      "Close the VIP bar at 20 on Sunday and move the volunteers",
+      "Move two volunteers from bar 2 to bar 5, Friday 18–20",
+      "Open the camping bar with two terminals until 21",
+      "Pop-up bar by the main stage after 23 on Saturday",
+      "Move the cider stock to bars 1 and 3 before Saturday night",
+      "Shorter menu on the food street, faster service",
+      "Draught-only line at bar 3, 22–24",
+      "Rent four fewer terminals for the entrance bar",
+      "More cooling in the tent on Saturday",
+      "The camping coffee bar opens at 7 instead of 9"
+    ]
+  },
+  "anatomy": {
+    "h2": "Every recommendation shows its working.",
+    "p": "We don’t just repeat last year’s clock times. We find the situations behind the queue – and predict when they will happen again.",
+    "rows": [
+      {
+        "k": "What",
+        "v": "3 more payment terminals at bar 4 when the situation occurs"
+      },
+      {
+        "k": "The situation",
+        "v": "A headliner in the tent for a 25–35-year-old crowd with high spending power that mostly buys draught beer and drinks. Demand peaks 30–90 minutes after the concert starts."
+      },
+      {
+        "k": "When it happens again",
+        "v": "Two nights in 2027: Friday from 21:00 and Saturday from 22:00 – where the line-up draws the same crowd to the tent."
+      },
+      {
+        "k": "Signals",
+        "v": "Line-up and genre · crowd age and spending power · what that crowd buys · ticket sales per day"
+      },
+      {
+        "k": "Why",
+        "v": "Last year demand was 700 servings an hour in that situation. Capacity was 520."
+      },
+      {
+        "k": "Learned from",
+        "v": "The same pattern at two other festivals – adapted to your tent and crowd"
+      },
+      {
+        "k": "Confidence",
+        "v": "High – the pattern repeated on both nights last year"
+      }
+    ],
+    "value": "+DKK 64,000",
+    "valueLabel": "Value"
+  },
+  "staffing": {
+    "h2": "Volunteers where the crowd is.",
+    "p": "Bar 4 on Saturday. Staffing follows the situations the crowd creates – predicted from the line-up, the crowd profile and what they buy. Six volunteers when the headliner fills the tent, two when it is quiet. The same number of shifts.",
+    "moments": [
+      "Site fills up",
+      "Warm-up",
+      "Headliner in the tent",
+      "After the concert",
+      "The last hours"
+    ],
+    "last": "Last year",
+    "next": "Next year"
+  },
+  "vendors": {
+    "h2": "Vendors get the numbers up front.",
+    "p": "A range per vendor and day – with the full reasoning behind it. Choose a vendor and see how we get to the number."
+  },
+  "terminals": {
+    "h2": "Payment terminals where the queues are.",
+    "p": "More where the queues were. Fewer where capacity stood empty.",
+    "last": "Last year",
+    "next": "Next year"
+  },
+  "cta": {
+    "h2": "Get your own plan for next time.",
+    "cta": "Become a partner"
+  }
+}
