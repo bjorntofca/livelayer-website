@@ -1,4 +1,4 @@
-import { clampInputs, estimate, krRange, nf, values, emailBody } from './shared/calc.mjs';
+import { clampInputs, cleanText, estimate, krRange, nf, values, emailBody } from './shared/calc.mjs';
 import '@fontsource-variable/mona-sans/standard.css';
 import './styles.css';
 import gsap from 'gsap';
@@ -364,27 +364,37 @@ if (hc) {
   }));
   render();
 
-  const body = () => emailBody(c, values(c, m, inputs(), L));
+  const nm = $('#hc-n'), fe = $('#hc-fe'), step2 = $('[data-step2]', hc), mailRow = $('[data-mail]', hc);
+  const who = () => ({ navn: cleanText(nm.value), festival: cleanText(fe.value) });
+  const body = () => emailBody(c, values(c, m, inputs(), L, who()));
   const dlg = $('[data-dialog]');
+  let stage = 1;
   hc.addEventListener('submit', async (e) => {
     e.preventDefault();
     const addr = em.value.trim();
-    const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(addr);
-    em.setAttribute('aria-invalid', String(!ok));
-    if (!ok) { fine.textContent = c.invalid; em.focus(); return; }
-    btn.disabled = true; const label = btn.textContent; btn.textContent = c.sending;
+    if (stage === 1) {
+      // Step 1: check the email, then ask for name and festival before sending.
+      const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(addr);
+      em.setAttribute('aria-invalid', String(!ok));
+      if (!ok) { fine.textContent = c.invalid; em.focus(); return; }
+      stage = 2; mailRow.hidden = true; fine.hidden = true; step2.hidden = false;
+      nm.focus();
+      return;
+    }
+    const b2 = $('.hc-send2', hc);
+    b2.disabled = true; const label = b2.textContent; b2.textContent = c.sending;
     try {
       const res = await fetch('/api/beregning', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: addr, lang: L, website: hc.website.value, ...inputs() }),
+        body: JSON.stringify({ email: addr, lang: L, website: hc.website.value, ...who(), ...inputs() }),
       });
       if (!res.ok) throw new Error(String(res.status));
       $('[data-to]', hc).textContent = addr;
-      $('[data-mail]', hc).hidden = true; fine.hidden = true; $('[data-ok]', hc).hidden = false;
+      step2.hidden = true; fine.hidden = true; $('[data-ok]', hc).hidden = false;
     } catch {
-      fine.textContent = c.error;
+      fine.hidden = false; fine.textContent = c.error;
     } finally {
-      btn.disabled = false; btn.textContent = label;
+      b2.disabled = false; b2.textContent = label;
     }
   });
   $('[data-preview]', hc).addEventListener('click', () => { $('[data-mailbody]').innerHTML = body(); dlg.showModal(); });

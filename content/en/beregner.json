@@ -21,9 +21,9 @@
   "preview": "See the email here",
   "error": "We couldn't send the email right now. Write to hello@livelayer.dk and we'll send it.",
   "mail": {
-    "subject": "Your estimate from LiveLayer: {interval} a year",
-    "hello": "Hi,",
-    "intro": "Thanks for trying our calculator. Here is the number and the short explanation behind it.",
+    "subject": "Your estimate from LiveLayer[ for {festival}]: {interval} a year",
+    "hello": "Hi[ {navn}],",
+    "intro": "Thanks for trying our calculator. Here is the number[ for {festival}] and the short explanation behind it.",
     "inputs": "{gæster} guests per day · {dage} · long queues {køer}",
     "rangeLabel": "Indicative potential per year",
     "peakTitle": "Sales that walk away from the queue",
@@ -37,6 +37,13 @@
     "cta": "Book 30 minutes",
     "ctaLink": "mailto:hello@livelayer.dk?subject=Analysis%20on%20our%20own%20numbers",
     "signoff": "Best regards\nBjørn\nLiveLayer · hello@livelayer.dk",
-    "notifySubject": "New estimate: {email}"
-  }
+    "notifySubject": "New estimate from {email}[ – {navn}][, {festival}]"
+  },
+  "step2": "Almost done. Who should we write to?",
+  "step2Text": "It makes the email a little more personal.",
+  "name": "Your name",
+  "namePh": "First name",
+  "festival": "Festival",
+  "festivalPh": "Festival name",
+  "send2": "Send the estimate"
 }

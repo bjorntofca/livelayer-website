@@ -21,11 +21,19 @@ export function estimate(m, { guests, days, queues }) {
   return { peak, vend, total: [peak[0] + vend[0], peak[1] + vend[1]] };
 }
 
-const fill = (s, v) => String(s || '').replace(/\{([^{}]+)\}/g, (x, k) => (k in v ? v[k] : x));
+// {token} is replaced by its value. Text in [brackets] is only shown when every token inside it has a value,
+// e.g. "Hej[ {navn}]," becomes "Hej Anna," or just "Hej,".
+const fill = (s, v) => String(s || '')
+  .replace(/\[([^[\]]*)\]/g, (x, inner) => ((inner.match(/\{([^{}]+)\}/g) || []).every((t) => String(v[t.slice(1, -1)] ?? '').trim()) ? inner : ''))
+  .replace(/\{([^{}]+)\}/g, (x, k) => (k in v ? v[k] : x));
+export const fillText = fill;
+export const cleanText = (s, max = 80) => String(s ?? '').replace(/[\r\n\t]+/g, ' ').replace(/[<>]/g, '').trim().slice(0, max);
 
 export function values(c, m, inp, L, extra = {}) {
   const e = estimate(m, inp);
   return {
+    navn: '',
+    festival: '',
     interval: krRange(e.total, L),
     'kø-interval': krRange(e.peak, L),
     'bod-interval': krRange(e.vend, L),

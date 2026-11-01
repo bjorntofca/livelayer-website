@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 const base = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(base, p), 'utf8'));
 
-const TOKENS = 'Du kan bruge {interval}, {kø-interval}, {bod-interval}, {gæster}, {dage} og {køer}. Tom linje = nyt afsnit.';
+const TOKENS = 'Du kan bruge {navn}, {festival}, {interval}, {kø-interval}, {bod-interval}, {gæster}, {dage} og {køer}. Tekst i [ ] vises kun, hvis det inde i den er udfyldt, fx "Hej[ {navn}],". Tom linje = nyt afsnit.';
 
 // Danish labels. Path-specific labels ("section.key") win over general ones ("key").
 const LABEL = {
@@ -32,12 +32,14 @@ const LABEL = {
   'beregner.email': 'E-mailfeltets navn (skjult, til skærmlæsere)', 'beregner.ph': 'Eksempel i e-mailfeltet', 'beregner.send': 'Knaptekst',
   'beregner.sending': 'Knaptekst mens den sender', 'beregner.fine': 'Lille tekst under feltet', 'beregner.invalid': 'Fejl: ugyldig e-mail',
   'beregner.ok': 'Tak-tekst (efterfølges af e-mailen)', 'beregner.preview': 'Link til at se mailen', 'beregner.error': 'Fejl: mailen kunne ikke sendes',
-  'beregner.mail': 'Mailen med beregningen',
+  'beregner.mail': 'Mailen med beregningen', 'beregner.step2': 'Trin 2: overskrift', 'beregner.step2Text': 'Trin 2: tekst',
+  'beregner.name': 'Trin 2: navnefeltets navn (skjult)', 'beregner.namePh': 'Trin 2: eksempel i navnefeltet', 'beregner.festival': 'Trin 2: festivalfeltets navn (skjult)',
+  'beregner.festivalPh': 'Trin 2: eksempel i festivalfeltet', 'beregner.send2': 'Trin 2: knaptekst',
   'mail.subject': 'Emne', 'mail.hello': 'Hilsen', 'mail.intro': 'Indledning', 'mail.inputs': 'Linje med deres svar',
   'mail.rangeLabel': 'Tekst under intervallet', 'mail.peakTitle': 'Afsnit 1: overskrift', 'mail.peakText': 'Afsnit 1: tekst',
   'mail.vendTitle': 'Afsnit 2: overskrift', 'mail.vendText': 'Afsnit 2: tekst', 'mail.whyTitle': 'Afsnit 3: overskrift', 'mail.whyText': 'Afsnit 3: tekst',
   'mail.nextLead': 'Næste skridt: fed start', 'mail.nextText': 'Næste skridt: tekst', 'mail.cta': 'Knaptekst', 'mail.ctaLink': 'Knappens link',
-  'mail.signoff': 'Underskrift', 'mail.notifySubject': 'Emne på kopien til jer ({email} = deres e-mail)',
+  'mail.signoff': 'Underskrift', 'mail.notifySubject': 'Emne på kopien til jer',
   // numbers
   beregner: 'Beregneren', spendPerGuestDay: 'Forbrug pr. gæst pr. dag (kr.)', foodShare: 'Madens andel af forbruget (0–1)',
   peakLoss: 'Tabt salg i spidstimer pr. kø-valg (andel, lav–høj)', low: 'Lav', high: 'Høj', recoverLow: 'Andel, der kan hentes – lav',
@@ -60,7 +62,7 @@ const LABEL = {
 const HINT = {
   'beregner.q': 'Rækkefølgen betyder noget: sjældent, nogle aftener, de fleste aftener.',
   'mail.ctaLink': 'Fx mailto:hello@livelayer.dk eller et link til en kalender.',
-  'mail.subject': TOKENS, 'mail.inputs': TOKENS, 'mail.intro': TOKENS, 'mail.peakText': TOKENS, 'mail.vendText': TOKENS,
+  'mail.subject': TOKENS, 'mail.hello': TOKENS, 'mail.notifySubject': 'Du kan bruge {email}, {navn} og {festival}. Tekst i [ ] vises kun, hvis det er udfyldt.', 'mail.inputs': TOKENS, 'mail.intro': TOKENS, 'mail.peakText': TOKENS, 'mail.vendText': TOKENS,
   'mail.whyText': TOKENS, 'mail.nextText': TOKENS, 'mail.signoff': 'Hver linje står på sin egen linje i mailen.',
   peakLoss: 'Tre rækker: sjældent, nogle aftener, de fleste aftener. 0,03 = 3 % af salget.',
   heroVideo: 'MP4 uden lyd, helst under 10 MB.', heroVideoMobile: 'MP4, helst under 3 MB.', nightVideo: 'MP4 uden lyd, helst under 10 MB.',

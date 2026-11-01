@@ -3,7 +3,7 @@
 import tal from '../../content/tal.json' with { type: 'json' };
 import da from '../../content/da/beregner.json' with { type: 'json' };
 import en from '../../content/en/beregner.json' with { type: 'json' };
-import { clampInputs, emailDocument, emailSubject, emailText, krRange, estimate, values } from '../../site/src/shared/calc.mjs';
+import { clampInputs, cleanText, emailDocument, emailSubject, emailText, fillText, krRange, estimate, values } from '../../site/src/shared/calc.mjs';
 
 const COPY = { da, en };
 const FROM = process.env.MAIL_FROM || 'LiveLayer <hello@livelayer.dk>';
@@ -30,7 +30,8 @@ export default async (req) => {
   const c = COPY[L];
   const m = tal.beregner;
   const inp = clampInputs(m, b);
-  const v = values(c, m, inp, L, { email });
+  const who = { navn: cleanText(b.navn), festival: cleanText(b.festival) };
+  const v = values(c, m, inp, L, { email, ...who });
 
   const res = await send({
     from: FROM, to: [email], reply_to: REPLY_TO,
@@ -43,11 +44,11 @@ export default async (req) => {
 
   const e = estimate(m, inp);
   const lead = [
-    `E-mail: ${email}`, `Sprog: ${L}`,
+    `Navn: ${who.navn || '–'}`, `Festival: ${who.festival || '–'}`, `E-mail: ${email}`, `Sprog: ${L}`,
     `Gæster pr. dag: ${inp.guests}`, `Dage: ${inp.days}`, `Lange køer: ${c.q[inp.queues]}`,
     `Interval: ${krRange(e.total, L)} (køer ${krRange(e.peak, L)}, boder ${krRange(e.vend, L)})`,
   ].join('\n');
-  await send({ from: FROM, to: [NOTIFY], reply_to: email, subject: String(c.mail.notifySubject || 'Ny beregning: {email}').replace('{email}', email), text: lead })
+  await send({ from: FROM, to: [NOTIFY], reply_to: email, subject: fillText(c.mail.notifySubject || 'Ny beregning fra {email}', v), text: lead })
     .catch((err) => console.error('notify', err));
 
   return Response.json({ ok: true });

@@ -21,9 +21,9 @@
   "preview": "Se mailen her",
   "error": "Mailen kunne ikke sendes lige nu. Skriv til hello@livelayer.dk, så sender vi den.",
   "mail": {
-    "subject": "Jeres beregning fra LiveLayer: {interval} om året",
-    "hello": "Hej,",
-    "intro": "Tak, fordi du prøvede vores beregner. Her er tallet og den korte forklaring bag.",
+    "subject": "Jeres beregning fra LiveLayer[ for {festival}]: {interval} om året",
+    "hello": "Hej[ {navn}],",
+    "intro": "Tak, fordi du prøvede vores beregner. Her er tallet[ for {festival}] og den korte forklaring bag.",
     "inputs": "{gæster} gæster pr. dag · {dage} · lange køer {køer}",
     "rangeLabel": "Vejledende potentiale pr. år",
     "peakTitle": "Salg, der går fra køen",
@@ -37,6 +37,13 @@
     "cta": "Book 30 minutter",
     "ctaLink": "mailto:hello@livelayer.dk?subject=Analyse%20p%C3%A5%20vores%20egne%20tal",
     "signoff": "Venlig hilsen\nBjørn\nLiveLayer · hello@livelayer.dk",
-    "notifySubject": "Ny beregning: {email}"
-  }
+    "notifySubject": "Ny beregning fra {email}[ – {navn}][, {festival}]"
+  },
+  "step2": "Næsten færdig. Hvem skal mailen til?",
+  "step2Text": "Så kan vi gøre den lidt mere personlig.",
+  "name": "Dit navn",
+  "namePh": "Fornavn",
+  "festival": "Festival",
+  "festivalPh": "Festivalens navn",
+  "send2": "Send beregningen"
 }

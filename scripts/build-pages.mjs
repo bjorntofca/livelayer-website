@@ -537,6 +537,15 @@ function calcCard(t) {
       <input type="text" name="website" class="hc-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button type="submit" class="btn">${c.send}</button>
     </div>
+    <div class="hc-step2" data-step2 hidden>
+      <p class="hc-s2h">${c.step2}</p>
+      <p class="hc-s2p">${c.step2Text}</p>
+      <div class="hc-s2f">
+        <label class="sr" for="hc-n">${c.name}</label><input type="text" id="hc-n" name="navn" placeholder="${esc(c.namePh)}" autocomplete="given-name" maxlength="80">
+        <label class="sr" for="hc-fe">${c.festival}</label><input type="text" id="hc-fe" name="festival" placeholder="${esc(c.festivalPh)}" autocomplete="organization" maxlength="80">
+      </div>
+      <button type="submit" class="btn hc-send2">${c.send2}</button>
+    </div>
     <p class="hc-fine" data-fine aria-live="polite">${c.fine}</p>
     <div class="hc-ok" data-ok hidden><p>${c.ok} <b data-to></b></p><button type="button" class="hc-link" data-preview>${c.preview} ›</button></div>
     <script type="application/json" data-calc-cfg>${cfg.replace(/</g, '\\u003c')}</script>
