@@ -72,7 +72,9 @@ const hint = (path, k) => HINT[`${path.at(-1)}.${k}`] || HINT[k];
 const isLong = (s) => typeof s === 'string' && (s.length > 70 || s.includes('\n'));
 
 function field(name, sample, path, samples = [sample]) {
-  const f = { name, label: label(path, name), required: false };
+  // Required unless the field is empty somewhere today, so a save can't silently blank a text on the site.
+  const empty = samples.some((x) => x === '' || x === null || (Array.isArray(x) && !x.length));
+  const f = { name, label: label(path, name), required: !empty };
   const h = hint(path, name);
   if (h) f.hint = h;
   if (typeof sample === 'string' && /^\/media\/.+\.(jpe?g|png|webp|gif|svg)$/i.test(sample)) return { ...f, widget: 'image', hint: h || IMAGE_HINT, choose_url: false };
@@ -90,7 +92,7 @@ function field(name, sample, path, samples = [sample]) {
       return { ...f, widget: 'list', collapsed: true, ...(sum ? { summary: `{{fields.${sum}}}` } : {}), fields };
     }
     if (Array.isArray(first)) return { ...f, widget: 'list', field: { name: 'raekke', label: 'Række', widget: 'string' } }; // not used today
-    return { ...f, widget: 'list', field: field('item', first ?? '', [...path, name], all) };
+    return { ...f, widget: 'list', collapsed: false, summary: '{{fields.item}}', field: { ...field('item', first ?? '', [...path, name], all), label: label(path, name) } };
   }
   if (sample && typeof sample === 'object') {
     return { ...f, widget: 'object', collapsed: path.length > 0, fields: Object.keys(sample).map((k) => field(k, sample[k], [...path, name], samples.map((s) => s?.[k]).filter((x) => x !== undefined))) };
