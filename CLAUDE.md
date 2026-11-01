@@ -4,13 +4,16 @@ Marketing site for LiveLayer (livelayer.dk). Write the name as LiveLayer. Small 
 
 ## Stack
 - Vite 7 multi-page build. `base: './'` means every path is relative, so the build works from any folder or host.
-- The HTML pages are **generated**. `scripts/build-pages.mjs` reads `content/da.mjs`, `content/en.mjs` and `content/data.mjs` and writes `site/**/index.html`. Edit the content modules or the generator, never the generated HTML.
+- The HTML pages are **generated**. `scripts/build-pages.mjs` reads the JSON in `content/` (`da/*.json`, `en/*.json`, `tal.json` for numbers and the calculator model, `medier.json` for images and video) and writes `site/**/index.html`. Edit the JSON or the generator, never the generated HTML. `scripts/data.mjs` adds derived totals and helpers.
+- **Admin at /admin/** (Decap CMS 3.17.1, self-hosted in `public/admin/decap/`). Its form is generated from the JSON by `scripts/build-cms.mjs` → `public/admin/config.json`, so new content keys appear automatically; Danish labels and hints live in that script. Login is GitHub OAuth through our own functions (`/api/auth`, `/api/callback`, app "LiveLayer" on bjorntofca). Saving commits to `main`, which rebuilds the site. Local testing: `npx decap-server` + serve `dist/` on localhost.
+- `scripts/media.mjs` (sharp) makes `-sm` copies of uploaded images and, on Netlify, shrinks oversized originals.
+- **Hero calculator** (front page, 3 inputs): logic and email template in `site/src/shared/calc.mjs`, shared by the page and `netlify/functions/beregning.mjs` (POST `/api/beregning`). That function sends the visitor's email via Resend from hello@livelayer.dk and a copy of the lead to hello@livelayer.dk (alias of bjorn@livelayer.dk). The text is in `content/<lang>/beregner.json`, the model in `content/tal.json` → `beregner`.
 - Motion: GSAP 3 + ScrollTrigger. Scrolling is native (no Lenis or other smooth-scroll library — this was tried and rejected).
 - Font: Mona Sans Variable (`@fontsource-variable/mona-sans`), self-hosted, using the width axis (font-stretch ~112%) for display type.
 
 ## Commands
 - `npm run dev` — generate the pages, then start Vite.
-- `npm run build` — generate the pages and build to `dist/`.
+- `npm run build` — generate the admin config, the image copies and the pages, then build to `dist/`.
 - `LINK_INDEX=1 npm run build` — preview build in which internal links end in `index.html`. Use it for hosts that do not resolve folder URLs, such as the claude.ai artifact preview.
 
 ## Design skills
@@ -37,9 +40,10 @@ Marketing site for LiveLayer (livelayer.dk). Write the name as LiveLayer. Small 
 - Never use the long em dash (—) in copy; use the short dash (–). The footer has no CVR and no photo credits. The partner offer says "Lige nu" (not "I vinter").
 - Artifact preview hosting: no path may start with `_`, and no file may contain U+FFFD.
 
-## Deploy (live since 29 Oct 2026)
-- Hosted on Netlify, site `livelayer` (id bc622e18-422f-42c0-9ef1-b2c63efa125a) in Bjørn's Netlify team. Primary domain livelayer.dk; aliases www.livelayer.dk, livelayer.si, www.livelayer.si. Let's Encrypt certificate, HTTPS forced.
-- Deploy: `npm run build` then `npx netlify-cli deploy --prod --dir dist --site bc622e18-422f-42c0-9ef1-b2c63efa125a` (after `netlify login`). Never deploy a `LINK_INDEX=1` build.
+## Deploy (live since 29 Oct 2026; built from GitHub since 1 Nov 2026)
+- Source: GitHub `bjorntofca/livelayer-website`, branch `main`. Netlify site `livelayer` (id bc622e18-422f-42c0-9ef1-b2c63efa125a, team bjorn-tofterup) builds every push with `netlify.toml` (`npm run build` → `dist`, functions in `netlify/functions`). Pushing to `main` = going live.
+- Environment variables on Netlify: `RESEND_API_KEY` and `GITHUB_CLIENT_SECRET` (secret), `GITHUB_CLIENT_ID`. Optional: `MAIL_FROM`, `MAIL_REPLY_TO`, `MAIL_NOTIFY`. Never put keys in the repo.
+- Primary domain livelayer.dk; aliases www.livelayer.dk, livelayer.si, www.livelayer.si. Let's Encrypt certificate, HTTPS forced. Never deploy a `LINK_INDEX=1` build.
 - `public/_redirects` sends livelayer.si and www.livelayer.si to livelayer.dk (301). `public/404.html` is the not-found page.
-- DNS stays at one.com: A @ → 75.2.60.5 and CNAME www → livelayer.netlify.app on both domains. **Never touch the Google Workspace MX, SPF/TXT, DKIM and DMARC records on livelayer.dk.**
+- DNS stays at one.com: A @ → 75.2.60.5 and CNAME www → livelayer.netlify.app on both domains. Resend (EU, eu-west-1) uses TXT `resend._domainkey`, CNAME `send` and CNAME `rsend` on livelayer.dk. **Never touch the Google Workspace MX, SPF/TXT, DKIM and DMARC records, and never add Resend's receiving MX on @.**
 - Netlify turned on team login protection by default; it is switched off (`sso_login: false`) so the site is public.
