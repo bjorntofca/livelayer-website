@@ -15,6 +15,8 @@ const da = language('da');
 const en = language('en');
 const LINK_INDEX = !!process.env.LINK_INDEX;
 const SITE = 'https://livelayer.dk/';
+// Cloudflare Web Analytics (cookieless visitor counts). The token is public; it only identifies the site.
+const CF_BEACON = '1836f97c0b9a49beabd475d3e5244d7a';
 
 const routes = {
   home: { da: '', en: 'en/' },
@@ -118,6 +120,7 @@ ${header(t, key, from)}
 ${body}
 </main>
 ${footer(t, key, from)}
+${LINK_INDEX ? '' : `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "${CF_BEACON}"}'></script>`}
 </body>
 </html>
 `;
