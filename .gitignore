@@ -7,3 +7,4 @@ site/*/index.html
 site/en/*/index.html
 public/admin/config.json
 .DS_Store
+public/sitemap.xml

@@ -107,6 +107,8 @@ function layout(t, key, page, body) {
 <meta property="og:image" content="${SITE}${String(M.shareImage).replace(/^\//, '')}">
 <meta property="og:locale" content="${t.lang === 'da' ? 'da_DK' : 'en_GB'}">
 <link rel="icon" href="${up(from)}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="${up(from)}favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="${up(from)}apple-touch-icon.png">
 <script>if('scrollRestoration' in history&&!location.hash){history.scrollRestoration='manual';}</script>
 <script type="module" src="${up(from)}src/main.js"></script>
 </head>
@@ -851,6 +853,19 @@ function partnerPage(t) {
 }
 
 const renderers = { home: homePage, audit: auditPage, plan: planPage, partner: partnerPage };
+
+// sitemap.xml: every page in both languages, with its translation linked.
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${Object.keys(routes).flatMap((key) => ['da', 'en'].map((L) => `  <url>
+    <loc>${SITE}${routes[key][L]}</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="${SITE}${routes[key].da}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="${SITE}${routes[key].en}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${routes[key].da}"/>
+  </url>`)).join('\n')}
+</urlset>
+`;
+writeFileSync(join(base, 'public', 'sitemap.xml'), sitemap);
 
 for (const t of [da, en]) {
   for (const key of Object.keys(routes)) {
